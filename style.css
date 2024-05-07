@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aqua;
+    box-sizing: border-box;
+}
+.board{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    /* background-image: linear-gradient(to right,blue, green,indigo,violet); */
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+}
+.board #addCard, #saveChanges, #reset{
+    color:black;
+    width: 150px;
+    height: 40px;
+    border-radius:10px;
+    box-shadow: 2px 2px 1px lightblue;
+    margin: 20px;
+    
+}
+#addCard:hover, #saveChanges:hover, #reset:hover{
+    font-size: large;
+}
+.taskContainers{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90vw;
+   height:80vh;
+
+}
+.column{
+    flex:1;
+    width: 30%;
+    height:80vh;
+    border:1px solid #ccc;
+    border-radius:10px;
+    /* padding: 10px; */
+    overflow:auto;
+    text-align: center;
+     margin: 10px;
+    
+   
+}
+.column h4{
+    border-bottom:1px dotted #ccc;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 5px lightblue;
+    position: sticky;
+    top:0%;
+    width: 100%;
+    background-color: rgb(155, 36, 36);
+}
+.card{
+    padding: 10px;
+    margin: 10px ;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 250px;
+    overflow:hidden;
+}
+
+
+  
+
+.card:nth-child(odd){
+    background-color: rgb(240, 77, 7);
+}
+.card:nth-child(even){
+    background-color: rgb(92, 12, 32);
+   
+}
+.options{
+    color: rgb(33, 3, 60);
+    font-weight: 200;
+    margin: 2px;
+    border-radius: 15px;
+    
+}
+.divCard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid beige;
+    margin: 10px ;
+    padding:5px;
+}
+.card:hover{
+    font-size: large;
+}
